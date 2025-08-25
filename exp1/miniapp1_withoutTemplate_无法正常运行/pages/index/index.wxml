@@ -1,0 +1,6 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <image src='{{src}}'></image>
+  <text>{{name}}</text>
+  <button bindtap="getProfile">点击获取头像和昵称</button>
+</view>

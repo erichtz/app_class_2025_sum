@@ -1,0 +1,11 @@
+/* pages/index/index.wxss */
+.container{
+  height:100vh; /*高100视窗*/
+  display: flex;
+  flex-direction: column;/*垂直布局*/
+  align-items: center;/*水平居中*/
+  justify-content: space-around;/*垂直方向分散布局*/
+}
+text{
+  color: #014099;
+}

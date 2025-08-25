@@ -1,0 +1,40 @@
+<!--pages/index/index.wxml-->
+<scroll-view class="scrollarea" scroll-y>
+  <view class="container">
+    <view class="userinfo">
+      <!-- 如果支持 chooseAvatar + nickname -->
+      <block wx:if="{{canIUseNicknameComp && !hasUserInfo}}">
+        <button class="avatar-wrapper" open-type="chooseAvatar" bindchooseavatar="onChooseAvatar">
+          <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+        </button>
+        <view class="nickname-wrapper">
+          <text class="nickname-label">昵称</text>
+          <input type="nickname" class="nickname-input" placeholder="海纳百川 取则行远" bindchange="onInputChange" />
+        </view>
+      </block>
+
+      <!-- 如果不支持 chooseAvatar，则走 getUserProfile -->
+      <block wx:elif="{{!hasUserInfo}}">
+        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile">获取头像昵称</button>
+        <view wx:else> 请升级到 2.10.4 及以上版本基础库 </view>
+      </block>
+
+      <!-- 已获取头像昵称 -->
+      <block wx:else>
+        <view class="userinfo-display">
+          <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+          <view>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+          </view>
+        </view>
+      </block>
+
+    </view>
+
+    <view class="usermotto">
+      <text class="user-motto">{{motto}}</text>
+    </view>
+  </view>
+</scroll-view>
+
+

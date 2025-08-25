@@ -1,0 +1,10 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#014099",
+    "navigationBarTextStyle":"white",
+    "navigationBarTitleText": "中国海洋大学"
+  }
+}
