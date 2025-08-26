@@ -1,0 +1,91 @@
+/* pages/index/index.wxss */
+
+/* 设置页面背景色和基础字体，让整体感觉更柔和 */
+page {
+  background-color: #f0f4f8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 使用 padding 代替 justify-content: space-around，可以更精确地控制间距 */
+  padding: 40rpx 30rpx;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+
+/* --- 区域1：地区选择器 --- */
+picker {
+  width: 100%;
+  text-align: center;
+  padding: 20rpx 0;
+  margin-bottom: 20rpx;
+}
+
+picker view {
+  font-size: 36rpx;
+  color: #333;
+  font-weight: 500;
+  /* 添加一个下划线，让可点击区域更明显 */
+  border-bottom: 1rpx solid #ddd;
+  display: inline-block;
+  padding: 0 20rpx 10rpx;
+}
+
+/* --- 区域2：单行天气信息 --- */
+text {
+  font-size: 120rpx;
+  color: #3c5f81;
+  line-height: 1.2;
+  margin: 20rpx 0;
+}
+
+/* --- 区域3：天气图标 --- */
+image {
+  width: 220rpx; 
+  height: 220rpx; 
+}
+
+/* --- 区域4：多行天气信息 --- */
+.detail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40rpx;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.05);
+}
+
+.bar {
+  display: flex;
+  flex-direction: row;
+  margin: 25rpx 0;
+}
+
+.box {
+  flex: 1;
+  text-align: center;
+  border-right: 1rpx solid #eaeaea;
+
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+/* 去掉最后一个盒子的右边框 */
+.box:last-child {
+  border-right: none;
+}
+
+.bar:nth-child(odd) .box {
+  color: #888; /* 标题文字设为灰色 */
+  font-weight: normal; 
+}
+
+.bar:nth-child(even) .box {
+  color: #333; /* 数据文字设为深色 */
+  font-weight: 600; /* 数据加粗 */
+}
