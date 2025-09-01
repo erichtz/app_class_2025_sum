@@ -62,7 +62,7 @@
 
 3、依次导入trash.json，type.json
 
-![image-20250901141749759](https://pic.ericzht.space/PicGo/image-20250901141749759.png)
+![image-20250901152544031](https://pic.ericzht.space/PicGo/image-20250901152544031.png)
 
 ## 三、程序运行结果
 
