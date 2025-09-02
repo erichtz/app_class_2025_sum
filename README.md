@@ -17,3 +17,7 @@
 垃圾分类小程序
 
 <img src="https://pic.ericzht.space/PicGo/image-20250901145254820.png" alt="image-20250901145254820" style="zoom: 50%;" />
+
+## 实验四：口述校史
+
+<img src="https://pic.ericzht.space/PicGo/image-20250902110847049.png" alt="image-20250902110847049" style="zoom:50%;" />
