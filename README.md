@@ -21,3 +21,7 @@
 ## 实验四：口述校史
 
 <img src="https://pic.ericzht.space/PicGo/image-20250902110847049.png" alt="image-20250902110847049" style="zoom:50%;" />
+
+## 实验五：第一个Harmony OS应用
+
+<img src="https://pic.ericzht.space/PicGo/image-20250908145638786.png" alt="image-20250908145638786" style="zoom:50%;" /> <img src="https://pic.ericzht.space/PicGo/image-20250908145630180.png" alt="image-20250908145630180" style="zoom:50%;" />
